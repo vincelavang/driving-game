@@ -4,5 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let x = 0
   let y = 0
   const image = document.querySelector('#source')
-  context.drawImage(image, x, y)
+  image.addEventListener('load', () => {
+    context.drawImage(image, x, y, 100, 100)
+  })
 })
