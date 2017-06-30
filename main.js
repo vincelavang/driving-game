@@ -21,3 +21,18 @@ function draw() {
   context.drawImage(image, x, y, 100, 100)
   context.restore()
 }
+
+document.addEventListener('keydown', function (event) {
+  if (event.keyCode === 87) {
+    mod = 1
+  }
+  if (event.keyCode === 83) {
+    mod = -1
+  }
+  if (event.keyCode === 65) {
+    mod = -1
+  }
+  if (event.keyCode === 68) {
+    mod = 1
+  }
+})
